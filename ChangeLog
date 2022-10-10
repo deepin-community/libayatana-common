@@ -1,0 +1,555 @@
+2021-11-01 Mike Gabriel
+
+        * release 0.9.5 (HEAD -> main, tag: 0.9.5)
+
+2021-11-01 Robert Tari
+
+        * Merge branch 'sunweaver-pr/travis-cleanup' (7c08c8a)
+
+2021-10-22 Robert Tari
+
+        * data/CMakeLists.txt: Do not use automatic GSchema compilation
+          (f5373a2)
+
+2021-11-01 Mike Gabriel
+
+        * .build.yml: Drop explicit build requirements list for debian:stable
+          (omitting lomiri-url-dispatcher). (7f5b189)
+        * .build.yml. Add intltool build-requirement. (e48ea60)
+
+2021-10-25 Mike Gabriel
+
+        * .build.yml: Run unit tests in build_scripts: target. (3e03d93)
+        * .build.yml: Drop autogen.sh support. (9ab858c)
+
+2021-10-22 Robert Tari
+
+        * data/CMakeLists.txt: Do not use automatic GSchema compilation
+          (90856e1)
+
+2021-10-21 Mike Gabriel
+
+        * Merge branch 'tari01-pr/use-intltool-merge-translations' (125095d)
+
+2021-10-21 Robert Tari
+
+        * data/CMakeLists.txt: Use intltool_merge_translations instead of
+          execute_process (001010d)
+
+2021-10-21 Mike Gabriel
+
+        * Merge branch 'tari01-pr/compile-gschema-during-installation'
+          (e0262a6)
+
+2021-10-20 Robert Tari
+
+        * Compile GSchema during installation (24bf442)
+
+2021-10-21 Mike Gabriel
+
+        * Merge branch 'tari01-pr/also-check-desktop-session' (3fdc867)
+
+2021-10-18 Robert Tari
+
+        * Manage DESKTOP_SESSION in unit tests (4683727)
+
+2021-09-17 Robert Tari
+
+        * Also check DESKTOP_SESSION when detecting DE (3298ec4)
+
+2021-10-20 Robert Tari
+
+        * .travis.yml: Temporarily disable ppc64le builds (59a93c0)
+
+2021-10-18 Mike Gabriel
+
+        * Merge branch 'tari01-pr/fix-build-warnings' (7114ab4)
+
+2021-10-18 Robert Tari
+
+        * src/utils.c: Replace deprecated g_spawn_check_exit_status (20a5afc)
+
+2021-10-18 Mike Gabriel
+
+        * Merge branch 'tari01-pr/update-installation-instructions' (fb4f2b0)
+
+2021-09-20 Robert Tari
+
+        * INSTALL.md: Update dependencies (edeead6)
+
+2021-10-18 Mike Gabriel
+
+        * Merge branch 'tari01-pr/fix-tests-on-current-desktop' (2797fce)
+
+2021-09-23 Wellington Terumi Uemura
+
+        * Translated using Weblate (Portuguese (Brazil)) (aee6034)
+        * Translated using Weblate (Portuguese (Brazil)) (c002c2c)
+
+2021-09-17 Robert Tari
+
+        * Fix tests to work when current desktop is the same as the one
+          tested (72ac9a7)
+
+2021-09-02 Robert Tari
+
+        * .build.yml: Also run unit tests during CI builds against Ubuntu.
+          (ed34d88)
+        * Fix Travis status image (0ad2502)
+        * Merge branch 'sunweaver-pr/url-dispatcher-link-libraries-in-tests'
+          (4968ed4)
+
+2021-09-01 Mike Gabriel
+
+        * release 0.9.4 (ecabcbd)
+
+2021-08-28 Mike Gabriel
+
+        * Translated using Weblate (German) (3967820)
+
+2021-08-29 Mike Gabriel
+
+        * debian/control: Fix Breaks: relation between
+          ayatana-indicator-common and ayatana-indicator-keyboard.
+          (8f47244)
+
+2021-08-29 Robert Tari
+
+        * Fix missing ayatana-common library during GIR scanning (21d4adb)
+        * Whitespace fix (3e45864)
+
+2021-08-28 Mike Gabriel
+
+        * debian/gir1.2-ayatanacommon-0.0.install: Add missing file.
+          (cb72491)
+        * debian/: Fix DEB packaging; add GIR, VAPI, translation and GSchema
+          files. Add gir1.2-ayatanacommon-0.0 bin:pkg. (3cceadb)
+        * src/CMakeLists.txt: Also generate binary typelib file (and set
+          nsversion for this). (32575a6)
+        * GIR and Vala bindings: Properly detect GObjectIntrospection and
+          Vala and disable GIR and Vala if not found. (7cb3047)
+
+2021-08-28 Weblate
+
+        * Added translation using Weblate (Kurdish (Northern)) (890f711)
+        * Added translation using Weblate (Kurdish (Southern)) (203b419)
+
+2021-09-01 Mike Gabriel
+
+        * release 0.9.4 (7ba6291) (tag: 0.9.4)
+
+2021-08-28 Mike Gabriel
+
+        * Translated using Weblate (German) (69b0e8b)
+
+2021-08-29 Mike Gabriel
+
+        * debian/control: Fix Breaks: relation between
+          ayatana-indicator-common and ayatana-indicator-keyboard.
+          (d4a0a41)
+        * Merge branch 'tari01-pr/fix-gir-error' (6976edc)
+
+2021-08-29 Robert Tari
+
+        * Fix missing ayatana-common library during GIR scanning (2f582bd)
+        * Whitespace fix (8c9b69a)
+
+2021-08-28 Mike Gabriel
+
+        * debian/gir1.2-ayatanacommon-0.0.install: Add missing file.
+          (5c156a7)
+        * Merge branch 'sunweaver-pr/generate-typelib-file' (1669b29)
+        * debian/: Fix DEB packaging; add GIR, VAPI, translation and GSchema
+          files. Add gir1.2-ayatanacommon-0.0 bin:pkg. (908b36b)
+        * src/CMakeLists.txt: Also generate binary typelib file (and set
+          nsversion for this). (765360a)
+        * Merge branch 'sunweaver-pr/conditional-gir-and-vala' (f3ac7d6)
+        * GIR and Vala bindings: Properly detect GObjectIntrospection and
+          Vala and disable GIR and Vala if not found. (3859fae)
+
+2021-08-28 Weblate
+
+        * Added translation using Weblate (Kurdish (Northern)) (91282da)
+        * Added translation using Weblate (Kurdish (Southern)) (2a7bb3b)
+
+2021-08-28 Mike Gabriel
+
+        * tests/CMakeLists.txt: Add missing ${URL_DISPATCHER_LIBRARIES} to
+          target_link_libraries(). (d9628fb)
+        * Merge branch 'sunweaver-pr/fix-vala-unittests--against-GLib-2.58'
+          (55155fe)
+        * tests/tst_utils.vala: Use older GLib.assert() API to make tests
+          work correctly when building against GLib 2.58. (d6b78d0)
+        * .travis.yml: Fix branch name what is now the default branch in
+          ayatana-dev-scripts. (8b40ad5)
+        * debian/control: Add B-Ds: valac, gobject-introspection and
+          libgirepository1.0-dev. (39f6704)
+        * release 0.9.3 (0334f03) (tag: 0.9.3)
+
+2021-08-27 Adolfo Jayme Barrientos
+
+        * Translated using Weblate (Spanish) (bf58b50)
+
+2021-08-26 Mike Gabriel
+
+        * Merge branch 'tari01-pr/drop-systemd-alias' (4238bc1)
+
+2021-08-23 Robert Tari
+
+        * Drop systemd target alias (3571fbf)
+
+2021-08-26 Mike Gabriel
+
+        * Merge branch 'tari01-pr/add-vala-bindings' (b32fac9)
+
+2021-08-17 Robert Tari
+
+        * Add Vala Bindings (c7320da)
+
+2021-08-10 Quentin PAGÈS
+
+        * Translated using Weblate (Occitan) (7f9519e)
+
+2021-08-10 Mike Gabriel
+
+        * Merge branch 'tari01-pr/fix-is-lomiri' (4331703)
+
+2021-08-10 Robert Tari
+
+        * Fix is_lomiri function (ccbdc57)
+
+2021-08-05 Mike Gabriel
+
+        * Merge branch 'tari01-pr/add-werror-cmake-option' (a590902)
+
+2021-08-04 Mike Gabriel
+
+        * tests/CMakeLists.txt: Drop -no-pie from CXX_FLAGS and add it as a
+          target link option. (84d2a71)
+        * .build.yml: Add -DENABLE_WERROR=ON build option (for cmake based
+          builds). (8132527)
+
+2021-08-03 Robert Tari
+
+        * Add ENABLE_WERROR CMake option (994baa4)
+
+2021-07-27 Ács Zoltán
+
+        * Translated using Weblate (Hungarian) (8386de0)
+
+2021-07-26 Milo Ivir
+
+        * Translated using Weblate (Croatian) (66ab069)
+
+2021-07-23 Oğuz Ersen
+
+        * Translated using Weblate (Turkish) (18d2451)
+
+2021-07-18 Kristjan Räts
+
+        * Translated using Weblate (Estonian) (d00e33f)
+
+2021-07-15 Boyuan Yang
+
+        * Translated using Weblate (Chinese (Simplified)) (1a69d7a)
+
+2021-07-15 Anders Jonsson
+
+        * Translated using Weblate (Swedish) (4bf4ecc)
+
+2021-07-16 Allan Nordhøy
+
+        * Translated using Weblate (Norwegian Bokmål) (f3eedb9)
+
+2021-07-16 Gediminas Murauskas
+
+        * Translated using Weblate (Lithuanian) (fc746a9)
+
+2021-07-15 Yaron Shahrabani
+
+        * Translated using Weblate (Hebrew) (3f900c6)
+
+2021-07-16 J. Lavoie
+
+        * Translated using Weblate (French) (a1cac4a)
+
+2021-07-15 Milan Korecky
+
+        * Translated using Weblate (Czech) (b5b242a)
+
+2021-07-14 Robert Tari
+
+        * Test (40f4c3e)
+        * Test (68ca6a1)
+
+2021-06-27 Mike Gabriel
+
+        * README.md: Add missing parenthesis close. (4610e5b)
+
+2021-06-24 Mike Gabriel
+
+        * Pre-release upstream version bump (0.9.2 -> 0.9.3). (6a5f925)
+        * Merge branch 'tari01-pr/fix-spelling' (e1af9b3)
+
+2021-06-17 Mike Gabriel
+
+        * debian/control: Add B-D: dh-exec (for
+          d/ayatana-indicator-common.install). (fb0975e)
+        * debian/control: Add B-D: intltool. (03f777f)
+
+2021-06-21 Robert Tari
+
+        * Rename ayatana_common_utils_elipsize to
+          ayatana_common_utils_ellipsize (07a3425)
+
+2021-06-16 Robert Tari
+
+        * Skip elipsizing if max characters are 0 (33cd95e)
+
+2021-06-17 Mike Gabriel
+
+        * debian/control: Add B-D: dh-exec (for
+          d/ayatana-indicator-common.install). (1e475a3)
+        * debian/control: Add B-D: intltool. (4a0b24b)
+
+2021-06-16 Robert Tari
+
+        * Merge branch 'sunweaver-pr/systemd-earlier-than-247' (4b6ef9d)
+
+2021-06-16 Mike Gabriel
+
+        * data/CMakeLists.txt: Provide a hacky-whacky approach for finding
+          the system unit dir for systemd less than 247. (85e6e45)
+        * Merge branch 'tari01-pr/update-install-doc' (10381c0)
+
+2021-06-16 Robert Tari
+
+        * INSTALL.md: Add gio-2.0 dependency (a7bc568)
+
+2021-06-16 Mike Gabriel
+
+        * Merge branch 'tari01-pr/add-ayatana-indicators-target' (822f3a3)
+
+2021-06-15 Robert Tari
+
+        * debian/: Add bin:pkg ayatana-indicator-common (moved from src:pkg
+          libayatana-indicator). (02200d2)
+        * .build.yml: Add systemd dependency (67301a9)
+        * data/: Add ayatana-indicators.target (moved from
+          libayatana-indicator). (5a26b01)
+
+2021-06-16 Mike Gabriel
+
+        * Merge branch 'tari01-pr/add-menu-item-lengths' (8b63acd)
+
+2021-06-14 Robert Tari
+
+        * Initialize i18n / gettext for newly added
+          org.ayatana.common.gschema.xml GSettings schema. (a30fd63)
+        * Add ability to ellipsize dynamic menu item lengths. (9be11d9)
+
+2021-06-09 Mike Gabriel
+
+        * Merge branch 'tari01-pr/cmake-install-full' (db18ded)
+
+2021-06-08 Robert Tari
+
+        * src/CMakeLists.txt: Use CMAKE_INSTALL_FULL_*DIR locations (84322ea)
+        * src/libayatana-common.pc.in: Use CMAKE_INSTALL_FULL_*DIR locations
+          (4f0c064)
+
+2021-05-25 Mike Gabriel
+
+        * release 0.9.2 (d4d621c) (tag: 0.9.2)
+
+2021-05-25 Robert Tari
+
+        * Merge branch
+          'sunweaver-pr/provide-have-desktopenv-program-functions'
+          (43bbe9b)
+
+2021-05-25 Mike Gabriel
+
+        * src/utils.(ch): Add ayatana_common_utils_have_*_program() functions
+          used in session indicator. (9fc7eaa)
+
+2021-05-23 Mike Gabriel
+
+        * Merge branch 'tari01-pr/update-docs' (3989df8)
+
+2021-05-17 Robert Tari
+
+        * Update documentation files (ffd9c2c)
+
+2021-05-12 Mike Gabriel
+
+        * Merge branch 'tari01-pr/prefix-symbols' (622d115)
+
+2021-05-12 Robert Tari
+
+        * Prefix functions in utils with ayatana_common_utils_ (68f98ee)
+
+2021-05-11 Robert Tari
+
+        * Merge branch 'sunweaver-pr/add-coverage-support' (75dd432)
+
+2021-05-04 Mike Gabriel
+
+        * .travis.yml: Don't try running autotools based CI build. (ae23acc)
+        * .travis.yml: Don't try running autotools based CI build. (c55c46f)
+        * CMakeLists.txt: Add coverage report support. (fbf20bd)
+
+2021-05-03 Mike Gabriel
+
+        * Prepare for next release (v0.9.2). (f8fb7f2)
+
+2021-05-01 Mike Gabriel
+
+        * README.md: Pull in CI build status icon from travis-ci.com, not
+          travis-ci.org. (00f4729)
+        * Merge branch 'tari01-pr/add-install' (e90249e)
+
+2021-04-29 Robert Tari
+
+        * INSTALL.md: Add build/installation instructions (17f5d8f)
+
+2021-05-01 Mike Gabriel
+
+        * Merge branch 'tari01-pr/standardise-makefile' (ddaf929)
+
+2021-04-29 Robert Tari
+
+        * CMakeLists.txt: Use our standardised CMake bits (155b2f1)
+        * Merge branch 'sunweaver-pr/travis-ci' (0d153a3)
+
+2021-04-29 Mike Gabriel
+
+        * CMakeLists.txt: Be happy with cmake 3.13 (fixes FTBFS on Debian
+          10). (298f4b3)
+        * .travis.yml: Temporarily disable CI builds on ubuntu:rolling.
+          Ubuntu's I series is not ready yet as docker container.
+          (e863413)
+        * tests/CMakeLists.txt: Build unit tests with --no-pie CXXFLAG.
+          (2484d58)
+        * README.md: Add file, show Travis CI status. (6781806)
+        * debian/rules: Explicitly enable unit tests during package build.
+          (2a3e4e9)
+        * CMakeLists.txt: Adjust test build option (DISABLE_TESTS ->
+          ENABLE_TESTS, defaulting to OFF). Add ENABLE_COVERAGE
+          build option. (82d8739)
+        * Travis CI: Initial draft for CI builds. (e29071a)
+
+2021-04-12 Robert Tari
+
+        * Attributes GH PR #11:
+          https://github.com/AyatanaIndicators/libayatana-common/pull/11
+          (9929648)
+
+2021-04-12 Mike Gabriel
+
+        * src/CMakeLists.txt: Drop PUBLIC_HEADER from set_target_properties
+          to avoid utils.h in <libdir>. (17c78ef)
+        * release 0.9.1 (e264045) (tag: 0.9.1)
+        * Merge branch 'tari01-pr/add-zenity-warning' (94b8cfc)
+
+2021-04-02 Robert Tari
+
+        * Add the Zenity warning function (9f6064b)
+
+2021-03-30 Mike Gabriel
+
+        * release 0.9.0 (8acbd3a) (tag: 0.9.0)
+        * Merge branch 'tari01-pr/add-budgie' (8b8c30f)
+
+2021-03-22 Robert Tari
+
+        * Add us to the copyright headers (18179a1)
+        * Add Budgie desktop support (cd6d7b2)
+        * Whitespace fix (27d8dca)
+
+2021-03-30 Mike Gabriel
+
+        * Merge branch 'tari01-pr/fix-required-cmake-version' (73bd95f)
+
+2021-02-08 Robert Tari
+
+        * Fix minimum required CMake version warning (5bf1dcb)
+
+2021-03-30 Mike Gabriel
+
+        * Merge branch 'revert-1-pr/no-lomiri-tests-without-url-dispatcher'
+          (4cba471)
+
+2021-02-03 Marius Gripsgard
+
+        * Revert "tests/: Don't run Lomiri related unit test, if library
+          hasn't been bu…" (bc3517b)
+
+2021-02-03 Robert Tari
+
+        * Merge branch 'sunweaver-pr/port-to-lomiri-url-dispatcher' (e3cb90d)
+
+2021-02-03 Mike Gabriel
+
+        * Port from URL Dispatcher to Lomiri URL Dispatcher. (7d1d251)
+
+2021-02-03 Robert Tari
+
+        * Merge branch 'sunweaver-pr/deb-packaging' (e679711)
+        * Merge branch 'sunweaver-pr/add-copying-file' (e436dff)
+
+2021-01-15 Mike Gabriel
+
+        * Explicitly set ABI_VERSION / API_VERSION and use ABI_VERSION in the
+          .so filename. (0954c9d)
+        * tests/CMakeLists.txt: Add GMOCK_LIBRARIES to
+          target_link_libraries(). (d16f5df)
+        * tests/: Don't run Lomiri related unit test, if library hasn't been
+          built against lomiri-uri-dispatcher. (e4bbb7d)
+
+2021-02-03 Robert Tari
+
+        * Merge branch 'sunweaver-pr/set-api-abi-version' (00d165c)
+
+2021-01-15 Mike Gabriel
+
+        * tests/CMakeLists.txt: Add GMOCK_LIBRARIES to
+          target_link_libraries(). (f4699d4)
+        * tests/: Don't run Lomiri related unit test, if library hasn't been
+          built against lomiri-uri-dispatcher. (792fe77)
+
+2021-02-03 Robert Tari
+
+        * Merge branch 'sunweaver-pr/gmock-must-be-in-link-libraries'
+          (1756ee8)
+
+2021-01-15 Mike Gabriel
+
+        * tests/: Don't run Lomiri related unit test, if library hasn't been
+          built against lomiri-uri-dispatcher. (1206219)
+
+2021-02-03 Robert Tari
+
+        * Merge branch 'sunweaver-pr/no-lomiri-tests-without-url-dispatcher'
+          (d869125)
+
+2021-01-15 Mike Gabriel
+
+        * debian/: Initial packaging draft. (2e291cb)
+        * tests/: Don't run Lomiri related unit test, if library hasn't been
+          built against lomiri-uri-dispatcher. (b462fd7)
+        * tests/CMakeLists.txt: Add GMOCK_LIBRARIES to
+          target_link_libraries(). (f730ff4)
+        * Explicitly set ABI_VERSION / API_VERSION and use ABI_VERSION in the
+          .so filename. (470a653)
+        * COPYING: Add file. (b6670f0)
+        * Explicitly set ABI_VERSION / API_VERSION and use ABI_VERSION in the
+          .so filename. (dc7ae44)
+        * tests/CMakeLists.txt: Add GMOCK_LIBRARIES to
+          target_link_libraries(). (1d64ee4)
+        * tests/: Don't run Lomiri related unit test, if library hasn't been
+          built against lomiri-uri-dispatcher. (b68ebfc)
+
+2021-01-12 Marius Gripsgard
+
+        * Inital commit (3cc2c95)

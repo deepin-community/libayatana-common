@@ -1,0 +1,31 @@
+libayatana-common (0.9.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.0. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 02 Nov 2021 16:20:04 +0100
+
+libayatana-common (0.9.4-1) unstable; urgency=medium
+
+  * New upstream version, still initial upload to Debian. (Closes: #986845).
+  * debian/copyright:
+    + Update auto-generated copyright.in template file.
+    + Update copyright attributions.
+  * debian/patches:
+    + Drop 1001_no-duplicate-utils-h-file.patch. Applied upstream.
+  * debian/:
+    + Adjust packaging to changes in 0.9.4 (localized GSettings, GIR, Vala
+      bindings, etc.).
+  * debian/libayatana-common0.symbols:
+    + Re-create .symbols file.
+  * debian/rules:
+    + Build with "--with gir".
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 08 Sep 2021 21:33:30 +0200
+
+libayatana-common (0.9.1-1) REJECTED; urgency=medium
+
+  * Initial release to Debian. (Closes: #986845).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 12 Apr 2021 21:39:25 +0200
